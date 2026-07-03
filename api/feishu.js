@@ -51,7 +51,7 @@ async function getTenantAccessToken() {
   return data.tenant_access_token;
 }
 
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
   // CORS 头
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
